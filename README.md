@@ -21,7 +21,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Hello Mircoverse <a name="about-project"></a>
+# 📖 Portfolio setup and mobile first <a name="about-project"></a>
 
 **Portfolio-setup-and-mobile-first** is a portfolio project. It has a homepage of my portfolio which is parsed from a Figma design.
 
