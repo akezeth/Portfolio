@@ -6,7 +6,7 @@
 
 /* toolbar section style */
 .toolbar {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -18,7 +18,7 @@
 }
 
 #logo {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -27,7 +27,7 @@
 }
 
 .headline {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -49,7 +49,7 @@ h1 {
 .job-title {
   width: 327px;
   height: 27px;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -60,7 +60,7 @@ h1 {
 .info {
   width: 327px;
   height: 123px;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Poppins', 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -76,4 +76,3 @@ h1 {
   padding-top: 30px;
   justify-content: space-around;
 }
-
