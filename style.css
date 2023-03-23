@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* toolbar section style */
+.toolbar {
+    background-color: #3C3A39;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 90px;
+    padding-left: 24px;
+    padding-right: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.headline {
+    background-color: #1C1A19;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 120px 24px;
+}
+
+h1 {
+    width: 327px;
+    height: 124px;
+    color: #ff6b00;
+    font-family: 'Crete Round', Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+}
+
+.job-title {
+    width: 327px;
+    height: 27px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 12px;
+}
+
+.info {
+    width: 327px;
+    height: 123px;
+    color: #ffffff;
+    font-family: 'Poppins', 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+}
+
+.socialmedia {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
