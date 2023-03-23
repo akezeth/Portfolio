@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* toolbar section style */
 .toolbar {
   background-color: #3c3a39;
@@ -27,6 +31,7 @@
 }
 
 .headline {
+  position: relative;
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -48,7 +53,7 @@ h1 {
 
 .job-title {
   width: 327px;
-  height: 27px;
+  height: 39px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -59,7 +64,7 @@ h1 {
 
 .info {
   width: 327px;
-  height: 123px;
+  height: 147px;
   color: #fff;
   font-family: 'Poppins', 'Trebuchet MS', sans-serif;
   font-style: normal;
@@ -75,4 +80,14 @@ h1 {
   display: flex;
   padding-top: 30px;
   justify-content: space-around;
+}
+
+.background-img {
+  background: url('images/headline-background.png');
+  width: 406.89px;
+  height: 312.03px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -24px;
+  left: 230px;
 }
