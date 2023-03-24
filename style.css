@@ -75,7 +75,7 @@ h1 {
   padding-top: 12px;
 }
 
-    /* socialmedia section */
+/* socialmedia section */
 .socialmedia {
   width: 200px;
   height: 40px;
@@ -95,7 +95,6 @@ h1 {
   left: 242px;
 }
 
-      /* Works section */
 /* contianer for all works*/
 .works {
   display: grid;
@@ -310,7 +309,7 @@ h1 {
   font-size: 15px;
 }
 
-.developer{
+.developer {
   width: 352px;
   display: flex;
   justify-content: end;
