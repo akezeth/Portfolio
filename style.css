@@ -95,7 +95,7 @@ h1 {
   left: 242px;
 }
 
-/* contianer for all works*/
+/* contianer for all works */
 .works {
   display: grid;
   grid-template-columns: 100%;
