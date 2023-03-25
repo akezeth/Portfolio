@@ -190,12 +190,6 @@ h1 {
 }
 
 /* link button styles */
-.work1Link:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
-}
-
 .work1Link:active {
   background-color: #e05304;
 }
@@ -314,7 +308,6 @@ h1 {
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
   padding: 120px 24px;
   position: relative;
   margin: 120px auto 0;
@@ -363,12 +356,6 @@ h1 {
 }
 
 /* link button styles */
-.resumeLink:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
-}
-
 .resumeLink:active {
   background-color: #e05304;
 }
@@ -485,12 +472,6 @@ input[type=submit] {
   font-size: 15px;
   margin-top: 12px;
   cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
 }
 
 input[type=submit]:active {
