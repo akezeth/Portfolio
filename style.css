@@ -435,7 +435,8 @@ form {
   margin-top: 50px;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
   width: 327px;
   padding: 12px;
   margin-bottom: 12px;
