@@ -443,6 +443,10 @@ form {
 
 input[type=text],
 input[type=email] {
+<<<<<<< HEAD
+=======
+  width: 327px;
+>>>>>>> 006de49b955ab995484b74433374a59584c18cce
   padding: 12px;
   margin-bottom: 8px;
   display: inline-block;
