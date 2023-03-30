@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- toolbar section -->
-    <section>
-        <header class="toolbar">
-            <a href="#" id="logo">My Logo</a>
-            <nav id="menu">
-                <a href="#"><img src="images/menu-icon.png" alt="menu icon"></a>
-            </nav>
-        </header>
-    </section>
+    <!-- header section -->
+    <header>
+        <a href="#" class="logo">aklilu</a>
+        <nav>
+            <div class="barsIcon"><i class="uil uil-bars"></i></div>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+                <li><a href="email"><i class="uil uil-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </header>    
     <!-- headline section -->
     <section>
         <div class="headline">
-            <h1>
-                Hey There. I'm Aklilu.
-            </h1>
-            <h3 class="job-title">
-                I'm a Software Developer
-            </h3>
-            <p class="info">
-                I can help you build a product, feature or website Look through some of my 
-                work and experience! If you like what you see and have a project you need coded, 
-                don’t hestiate to contact me.
-            </p>
+            <div class="intro">
+                <h1>
+                    Hey There. <br>
+                    I'm Aklilu.
+                </h1>
+                <h3 class="job-title">
+                    I'm a Software Developer
+                </h3>
+                <p class="info">
+                    I can help you build a product, feature or website Look through some of my 
+                    work and experience! If you like what you see and have a project you need coded, 
+                    don’t hestiate to contact me.
+                </p>
+            </div>
             <!-- social media section -->
-            <ul class="socialmedia">
-                <li>
-                    <a href="https://github.com/akezeth"><img src="images/github-icon.png" alt="Github"></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/aklilu-mekonnen-a8287b74"><img src="images/linkedin-icon.png" 
-                        alt="Linkedin"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/angelist-icon.png" alt="Angelist"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/akezeth"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/medium-icon.png" alt="Mediujm"></a>
-                </li>
-            </ul>
+            <div class="socialmedia">
+                <ul>
+                    <li>
+                        <a href="https://github.com/akezeth"><img src="images/github-icon.png" alt="Github"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aklilu-mekonnen-a8287b74"><img src="images/linkedin-icon.png" 
+                            alt="Linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/angelist-icon.png" alt="Angelist"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/akezeth"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/medium-icon.png" alt="Mediujm"></a>
+                    </li>
+                </ul>
+            </div>
             <div id="background-img" class="background-img"></div>
         </div>
     </section>
@@ -60,28 +79,32 @@
                 <h2 class="recentWorks">
                     My Recent Works
                 </h2>
-                <img src="images/line.png" alt="line">
+                <hr>
             </div>
             <div class="work1">
-                <img src="images/Img Placeholder.png" alt="image">
-                <h3 class="work1Title">
-                    Multi-Post Stories
-                </h3>
-                <p class="work1Description">
-                    A daily selection of privately personalized reads; no accounts or 
-                    sign-ups required. has been the industry's standard dummy text ever 
-                    since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="work1Languages">
-                    <li> <button class="work1Button" type="button">CSS</button> </li>
-                    <li> <button class="work1Button" type="button">HTML </button> </li>
-                    <li> <button class="work1Button" type="button">Bootstrap</button> </li>
-                    <li> <button class="work1Button" type="button">Ruby</button> </li>
-                </ul>
-                <button class="work1Link">See project</button>
+                <div class="work1Image">
+                    <img src="images/Img Placeholder.png" alt="image">
+                </div>
+                <div class="work1Info">
+                    <h3 class="work1Title">
+                        Multi-Post Stories
+                    </h3>
+                    <p class="work1Description">
+                        A daily selection of privately personalized reads; no accounts or 
+                        sign-ups required. has been the industry's standard dummy text ever 
+                        since the 1500s, when an unknown printer took a standard dummy text.
+                    </p>
+                    <ul class="work1Languages">
+                        <li> <button class="work1Button" type="button">CSS</button> </li>
+                        <li> <button class="work1Button" type="button">HTML </button> </li>
+                        <li> <button class="work1Button" type="button">Bootstrap</button> </li>
+                        <li> <button class="work1Button" type="button">Ruby</button> </li>
+                    </ul>
+                    <button class="work1Link">See project</button>
+                </div>
             </div>
             <div class="otherWorks">
-                <div class="work2">
+                <div class="work2 work21">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
@@ -96,7 +119,7 @@
                     </ul>
                     <button class="work1Link">See project</button>
                 </div>
-                <div class="work2">
+                <div class="work2 work22">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
@@ -111,7 +134,7 @@
                     </ul>
                     <button class="work1Link">See project</button>
                 </div>
-                <div class="work2">
+                <div class="work2 work23">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
@@ -126,7 +149,7 @@
                     </ul>
                     <button class="work1Link">See project</button>
                 </div>
-                <div class="work2">
+                <div class="work2 work24">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
@@ -141,7 +164,7 @@
                     </ul>
                     <button class="work1Link">See project</button>
                 </div>
-                <div class="work2">
+                <div class="work2 work25">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
@@ -156,22 +179,7 @@
                     </ul>
                     <button class="work1Link">See project</button>
                 </div>
-                <div class="work2">
-                    <h3 class="work2Title">
-                        Profesional Art Printing Data
-                    </h3>
-                    <p class="work2Description">
-                        A daily selection of privately personalized reads; no accounts or 
-                        sign-ups required. Has been the industry's standard.
-                    </p>
-                    <ul class="work2Languages">
-                        <li> <button class="work2Button" type="button">HTML </button> </li>
-                        <li> <button class="work2Button" type="button">Bootstrap</button> </li>
-                        <li> <button class="work2Button" type="button">Ruby</button> </li>
-                    </ul>
-                    <button class="work1Link">See project</button>
-                </div>
-                <div class="work2">
+                <div class="work2 work26">
                     <h3 class="work2Title">
                         Profesional Art Printing Data
                     </h3>
