@@ -310,12 +310,17 @@ h1 {
 /* container for work2 */
 .work2 {
   width: 20.5rem;
-  height: 12.5rem;
+  /* height: 12.5rem; */
   display: flex;
   flex-direction: column;
-  background-image: url(images/work_background\ image.png);
-  background-repeat: no-repeat;
   margin-top: 1.5rem;
+}
+
+.work2Info {
+  width: 20.5rem;
+  background-image: url(images/work2BackgroundMob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .work2Title {
@@ -402,8 +407,14 @@ h1 {
     justify-content: space-evenly;
   }
 
+  .work2:hover {
+    background-image: url(images/work2BackgroundDesk.png);
+    cursor: pointer;
+  }
+
   .work2Info:hover {
-    display: none;
+    visibility: hidden;
+    
   }
 }
 
