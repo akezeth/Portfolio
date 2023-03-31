@@ -310,6 +310,7 @@ h1 {
 /* container for work2 */
 .work2 {
   width: 20.5rem;
+
   /* height: 12.5rem; */
   display: flex;
   flex-direction: column;
@@ -414,7 +415,6 @@ h1 {
 
   .work2Info:hover {
     visibility: hidden;
-    
   }
 }
 
