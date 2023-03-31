@@ -64,7 +64,6 @@ nav ul {
 
 .headline {
   width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: calc(90% - 2rem);
   padding: 6.25rem 1.5rem;
@@ -165,7 +164,7 @@ h1 {
   justify-items: center;
   width: 100%;
   padding-left: 8.75rem;
-  padding-right: 8.755rem;
+  padding-right: 8.75rem;
 }
 
 /* container for 'Recent Works' title */
@@ -312,7 +311,6 @@ h1 {
 /* container for work2 */
 .work2 {
   width: 20.5rem;
-  height: 24.15rem;
   display: flex;
   flex-direction: column;
   background-image: url(images/work_background\ image.png);
@@ -407,54 +405,48 @@ h1 {
 /* About me section */
 .aboutMe {
   width: 100%;
-  height: 1650px;
-  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  padding: 120px 24px;
+  padding: 7.5rem 1.5rem;
   position: relative;
-  margin: 120px auto 0;
+  margin: 0 auto;
 }
 
 .aboutMeTitle {
-  width: 327px;
-  height: 79px;
   color: #ff6b00;
   font-family: 'Crete Round', Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .aboutMeDescription {
-  width: 327px;
-  height: 148px;
+  width: 20.5rem;
   color: #fff;
   font-family: 'Inter', 'Trebuchet MS', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  padding-top: 12px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.75rem;
 }
 
 .resumeLinkContainer {
-  padding-top: 36px;
+  padding-top: 2.25rem;
 }
 
 .resumeLink {
-  width: 156px;
-  height: 48px;
+  width: 9.75rem;
   background-color: #ff6b00;
   border: none;
   color: #fff;
-  padding: 12px;
+  padding: 0.8rem;
   text-align: center;
   display: inline-block;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -476,107 +468,130 @@ h1 {
 }
 
 .background-img2 {
-  background: url('images/aboutMe background.png');
-  width: 160px;
-  height: 260px;
+  background-image: url('images/aboutMe backgroundMob.png');
+  background-size: contain;
+  width: 10rem;
+  height: 16.25rem;
   background-repeat: no-repeat;
   position: absolute;
-  top: 370px;
+  top: 23.1rem;
   right: 0;
 }
 
-.line2 {
-  padding-top: 200px;
+@media (min-width: 768px) {
+  .aboutMe {
+    padding-left: min(8.75rem, calc(100% - 45rem));
+    padding-right: min(8.75rem, calc(100% - 45rem));
+  }
+
+  .aboutMeDescription {
+    width: min(45rem, calc(100% - 23rem));
+    font-size: 1.25rem;
+  }
+
+  .background-img2 {
+    background-image: url('images/aboutMebackgroundDesk.png');
+    background-size: contain;
+    width: 26rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 8rem;
+    right: 0;
+  }
 }
 
-.skills {
+.line2 {
+  padding-top: 12.5rem;
+}
+
+.experience {
   color: #fff;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 5rem;
 }
 
-.skills ul {
+.experience h3 {
   font-family: 'InaiMathi', 'Gill Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
 }
 
-.ulList {
+.experience ul {
   font-family: 'InaiMathi', 'Gill Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* contact section */
 .contact {
-  width: 100%;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding-left: 24px;
-  padding-right: 24px;
+  display: grid;
+  padding: 4.3rem 0 9.6rem;
+  grid-template-columns: 20.5rem;
+  justify-content: center;
 }
 
-.newProjects {
-  width: 327px;
+.contactIntro {
   color: #172b4d;
   font-family: 'Inter', 'Gill Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 3.4rem;
   text-align: center;
-  margin: 50px auto;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 327px;
-  align-self: center;
+.contactForm {
+  width: 100%;
 }
 
 input[type=text],
 input[type=email] {
-  padding: 12px;
-  margin-bottom: 8px;
-  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
   border: none;
   border-bottom: 1px solid #ccc;
 }
 
 textarea {
+  width: 100%;
   background-color: #fbf8f7;
   border: none;
-  height: 114px;
-  padding: 12px;
+  height: 7.15rem;
+  padding: 0.75rem;
   font-style: italic;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .submitContainer {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 56px;
+  margin-top: 1rem;
 }
 
 button[type=submit] {
-  width: 131px;
-  height: 48px;
+  width: 8.2rem;
+  height: 3rem;
   background-color: #ff6b00;
   border: none;
   color: #fff;
-  padding: 12px;
+  padding: 0.75rem;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -596,20 +611,59 @@ button[type=submit]:disabled {
   color: #5b5957;
 }
 
+@media (max-width: 768px) {
+  .contactForm .sname {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 8.1rem;
+    gap: 1.5rem;
+  }
+
+  .contactIntro {
+    padding-left: 8.1rem;
+    text-align: left;
+  }
+
+  .contactForm {
+    padding-left: 2.1rem;
+    padding-right: 8.1rem;
+  }
+
+  .contactForm .fullnameInput {
+    display: none;
+  }
+
+  .contactForm .sname {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .submitContainer {
+    justify-content: left;
+  }
+}
+
 .footer {
   width: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 56px; */
   border-top: 1px solid  #dfe1e6;
+  padding: 1.5rem 0;
 }
 
 .socialmedia2 {
-  width: 200px;
+  width: 12.5rem;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  margin-top: 15px;
+  padding: 0.63rem;
+  margin-top: 1rem;
 }

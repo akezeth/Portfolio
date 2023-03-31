@@ -204,7 +204,7 @@
                 About me
             </h2>
             <p class="aboutMeDescription">
-                Hello I’m a software developer! I can help you build a product , feature or 
+                Hello I’m a software developer! I can help you build a product, feature or 
                 website Look through some of my work and experience! If you like what you 
                 see and have a project you need coded, don’t hesitate to contact me.
             </p>
@@ -213,48 +213,70 @@
             </div>
             <div id="background-img2" class="background-img2"></div>
             <img src="images/line2.png" alt="line" class="line2">
-            <div class="skills">
-                <ul>
-                    <li><img src="images/lagnuages-icon.png" alt="rombus">&nbsp;&nbsp;Language</li>
-                        <ul><div class="ulList">
-                            <li>JavaScript</li>
-                            <li>Ruby</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </div></ul>
-                    <li><img src="images/frameworks-icon.png" alt="square">&nbsp;&nbsp;Frameworks</li>
-                        <ul><div class="ulList">
-                            <li>React.js</li>
-                            <li>Ruby on Rails</li>
-                            <li>RSpec</li>
-                            <li>Capybara</li>
-                        </div></ul>
-                    <li><img src="images/skills-icon.png" alt="circle">&nbsp;&nbsp;Skills</li>
-                        <ul><div class="ulList">
-                            <li>Database Management</li>
-                            <li>Version Control</li>
-                            <li>CLI</li>
-                            <li>API Design</li>
-                            <li>Web Development</li>
-                        </div></ul>
-                </ul>
+            <div class="experience">
+                <div class="language">
+                    <h3><img src="images/lagnuages-icon.png" alt="rombus">&nbsp;Language</h3>
+                    <ul><div class="ulList">
+                        <li>JavaScript</li>
+                        <li>Ruby</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </div></ul>
+                </div>
+                <div class="frameworks">
+                    <h3><img src="images/frameworks-icon.png" alt="square">&nbsp;Frameworks</h3>
+                    <ul><div class="ulList">
+                        <li>React.js</li>
+                        <li>Ruby on Rails</li>
+                        <li>RSpec</li>
+                        <li>Capybara</li>
+                    </div></ul>
+                </div>
+                <div class="skills">
+                    <h3><img src="images/skills-icon.png" alt="circle">&nbsp;Skills</h3>
+                    <ul><div class="ulList">
+                        <li>Database Management</li>
+                        <li>Version Control</li>
+                        <li>CLI</li>
+                        <li>API Design</li>
+                        <li>Web Development</li>
+                    </div></ul>
+                </div>    
             </div>
         </div>
     </section>
     <section>
         <div class="contact">
-            <p class="newProjects">
-                I'm always<br>interested in hearing about new projects,<br>so if you'd like to 
-                chat please get in touch.
-            </p>
-            <form action="https://formspree.io/f/xoqzkakk" class="contactForm" method="post">
-                <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="30" required><br>
-                <input type="email" id="email" name="_replyto" placeholder="Enter email" required><br>
-                <textarea name="Opinion" id="Opinion" maxlength="500" placeholder="Write me something..." required></textarea>
-                <div class="submitContainer">
-                    <button type="submit" id="submit" name="submit" value="submit">Get In Touch</button>
-                </div>
-            </form>    
+            <div class="contactIntro">
+                <p>
+                    I'm always interested in hearing about new projects, so if you'd like to 
+                    chat please get in touch.
+                </p>
+            </div>
+            <div class="contactForm">
+                <form action="https://formspree.io/f/xoqzkakk" method="post">
+                    <div class="sname">
+                        <div class="firstnameInput">
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30" required>
+                        </div>
+                        <div class="lastnameInput">
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30" required>
+                        </div>
+                    </div>
+                    <div class="fullnameInput">
+                        <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="30" required>
+                    </div>
+                    <div class="emailInput">
+                        <input type="email" id="email" name="_replyto" placeholder="Enter email" required>
+                    </div>
+                    <div class="messageInput">
+                        <textarea name="Opinion" id="Opinion" maxlength="500" required>Write me something...</textarea>
+                    </div>
+                    <div class="submitContainer">
+                        <button type="submit" id="submit" name="submit" value="submit">Get In Touch</button>
+                    </div>
+                </form>
+            </div>    
         </div>
     </section>
     <footer>
