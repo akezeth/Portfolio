@@ -310,6 +310,7 @@ h1 {
 /* container for work2 */
 .work2 {
   width: 20.5rem;
+  height: 12.5rem;
   display: flex;
   flex-direction: column;
   background-image: url(images/work_background\ image.png);
@@ -365,6 +366,7 @@ h1 {
 }
 
 .work2Link {
+  width: 100%;
   background-color: #ff6b00;
   border: none;
   color: #fff;
@@ -398,6 +400,10 @@ h1 {
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-evenly;
+  }
+
+  .work2Info:hover {
+    display: none;
   }
 }
 
