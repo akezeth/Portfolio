@@ -310,18 +310,18 @@ h1 {
 /* container for work2 */
 .work2 {
   width: 20.5rem;
-
-  /* height: 12.5rem; */
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(images/work2BackgroundDesk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .work2Info {
-  width: 20.5rem;
-  background-image: url(images/work2BackgroundMob.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 20.3rem;
 }
 
 .work2Title {
@@ -402,7 +402,6 @@ h1 {
 
 @media (min-width: 768px) {
   .otherWorks {
-    /* width: 23rem; */
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -410,7 +409,11 @@ h1 {
   }
 
   .work2 {
-    width: 23rem;
+    width: 23.2rem;
+  }
+
+  .projectLink {
+    visibility: hidden;
   }
 
   .work2Info {
@@ -423,14 +426,16 @@ h1 {
   }
 
   .work2:hover {
-    /* width: 23rem; */
     background-image: url(images/work2BackgroundDesk.png);
     cursor: pointer;
   }
 
-  .work2Info:hover {
-    /* width: 23rem; */
+  .work2:hover .work2Info {
     visibility: hidden;
+  }
+
+  .work2:hover .projectLink {
+    visibility: initial;
   }
 }
 
