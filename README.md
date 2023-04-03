@@ -46,9 +46,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="[live-demo](https://akezeth.github.io/Portfolio/)"></a>
 
-It doesn't have a demo yet.
+https://akezeth.github.io/Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,7 +64,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-git clone hhttps://github.com/akezeth/Portfolio-setup-and-mobile-first
+git clone hhttps://github.com/akezeth/Portfolio
 
 Install this project with:
 
@@ -97,6 +97,8 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **CSS Grid**
+- [ ] **CSS Flex**
+- [ ] **Responsive Web Design"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,7 +106,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [[issues page](https://github.com/akezeth/Portfolio-setup-and-mobile-first/issues)](../../issues/).
+Feel free to check the [[issues page](https://github.com/akezeth/Portfolio/issues)](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
