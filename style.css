@@ -239,6 +239,7 @@ h1 {
   display: flex;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .work1Button {
@@ -255,9 +256,9 @@ h1 {
 }
 
 .work1Link {
-  background-color: #ff6b00;
+  background-color: #091e42;
   border: none;
-  color: #1c1a19;
+  color: #fff;
   padding: 0.75rem;
   text-align: center;
   font-weight: 700;
@@ -267,13 +268,13 @@ h1 {
 
 /* link button styles */
 .work1Link:focus {
-  background-color: #e05304;
+  background-color: #051736;
 }
 
 .work1Link:hover {
-  background-color: #1c1a19;
-  border: 2px solid #ff6b00;
-  color: #ff6b00;
+  background-color: #fff;
+  border: 2px solid #091e42;
+  color: #091e42;
   transition: 0.5s;
 }
 
@@ -370,29 +371,31 @@ h1 {
   font-weight: 400;
   font-size: 1rem;
   margin-right: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .work2Link {
   width: 100%;
-  background-color: #e25e00;
+  background-color: #091e42;
   border: none;
-  color: #1c1a19;
+  color: #fff;
   padding: 0.75rem;
   text-align: center;
   display: inline-block;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 1.5rem;
 }
 
 .work2Link:focus {
-  background-color: #e05304;
+  background-color: #051736;
 }
 
 .work2Link:hover {
-  background-color: #1c1a19;
-  border: 2px solid #ff6b00;
-  color: #ff6b00;
+  background-color: #fff;
+  border: 2px solid #091e42;
+  color: #091e42;
   transition: 0.5s;
 }
 
@@ -626,9 +629,9 @@ textarea {
 button[type=submit] {
   width: 8.2rem;
   height: 3rem;
-  background-color: #ff6b00;
+  background-color: #172b4d;
   border: none;
-  color: #1c1a19;
+  color: #fff;
   padding: 0.75rem;
   font-weight: 700;
   font-size: 1rem;
@@ -636,13 +639,13 @@ button[type=submit] {
 }
 
 button[type=submit]:focus {
-  background-color: #e05304;
+  background-color: #011230;
 }
 
 button[type=submit]:hover {
-  background-color: #1c1a19;
-  border: 2px solid #ff6b00;
-  color: #ff6b00;
+  background-color: #fff;
+  border: 2px solid #172b4d;
+  color: #172b4d;
   transition: 0.5s;
 }
 
