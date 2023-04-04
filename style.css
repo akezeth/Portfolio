@@ -239,6 +239,7 @@ h1 {
   display: flex;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .work1Button {
@@ -255,25 +256,26 @@ h1 {
 }
 
 .work1Link {
-  background-color: #ff6b00;
+  background-color: #091e42;
   border: none;
   color: #fff;
   padding: 0.75rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
 }
 
 /* link button styles */
-.work1Link:active {
-  background-color: #e05304;
+.work1Link:focus {
+  background-color: #051736;
 }
 
 .work1Link:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
+  background-color: #fff;
+  border: 2px solid #091e42;
+  color: #091e42;
+  transition: 0.5s;
 }
 
 .work1Link:disabled {
@@ -369,29 +371,32 @@ h1 {
   font-weight: 400;
   font-size: 1rem;
   margin-right: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .work2Link {
   width: 100%;
-  background-color: #ff6b00;
+  background-color: #091e42;
   border: none;
   color: #fff;
   padding: 0.75rem;
   text-align: center;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 1.5rem;
 }
 
-.work2Link:active {
-  background-color: #e05304;
+.work2Link:focus {
+  background-color: #051736;
 }
 
 .work2Link:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
+  background-color: #fff;
+  border: 2px solid #091e42;
+  color: #091e42;
+  transition: 0.5s;
 }
 
 .work2Link:disabled {
@@ -478,24 +483,25 @@ h1 {
   width: 9.75rem;
   background-color: #ff6b00;
   border: none;
-  color: #fff;
+  color: #1c1a19;
   padding: 0.8rem;
   text-align: center;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
 }
 
 /* link button styles */
-.resumeLink:active {
+.resumeLink:focus {
   background-color: #e05304;
 }
 
 .resumeLink:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
+  background-color: #1c1a19;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
 }
 
 .resumeLink:disabled {
@@ -623,23 +629,24 @@ textarea {
 button[type=submit] {
   width: 8.2rem;
   height: 3rem;
-  background-color: #ff6b00;
+  background-color: #172b4d;
   border: none;
   color: #fff;
   padding: 0.75rem;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
 }
 
-button[type=submit]:active {
-  background-color: #e05304;
+button[type=submit]:focus {
+  background-color: #011230;
 }
 
 button[type=submit]:hover {
-  background-color: #fff5e1;
-  border: #f55800;
-  color: #f55800;
+  background-color: #fff;
+  border: 2px solid #172b4d;
+  color: #172b4d;
+  transition: 0.5s;
 }
 
 button[type=submit]:disabled {
