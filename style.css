@@ -267,7 +267,7 @@ h1 {
 
 /* link button styles */
 .work1Link:focus {
-  background-color: #E05304;
+  background-color: #e05304;
 }
 
 .work1Link:hover {
@@ -386,7 +386,7 @@ h1 {
 }
 
 .work2Link:focus {
-  background-color: #E05304;
+  background-color: #e05304;
 }
 
 .work2Link:hover {
@@ -491,7 +491,7 @@ h1 {
 
 /* link button styles */
 .resumeLink:focus {
-  background-color: #E05304;
+  background-color: #e05304;
 }
 
 .resumeLink:hover {
@@ -636,8 +636,7 @@ button[type=submit] {
 }
 
 button[type=submit]:focus {
-  background-color: #E05304;
-  ;
+  background-color: #e05304;
 }
 
 button[type=submit]:hover {
