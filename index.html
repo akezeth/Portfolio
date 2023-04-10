@@ -19,20 +19,21 @@
 </head>
 <body>
     <!-- header section -->
-    <header>
+    <header class="header">
         <a href="#" class="logo">aklilu</a>
-        <nav>
-            <div class="barsIcon"><i class="uil uil-bars"></i></div>
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#contact-me">Contact</a></li>
-                <li><a href="email"><i class="uil uil-envelope"></i></a></li>
-            </ul>
+    
+        <i class="uil uil-bars" id="menuIcon"></i>
+
+        <nav class="navbar">
+            <!-- <a href="#headline">Hello</a> -->
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about-me">About</a>
+            <a href="#contact-me">Contact</a>
+            <a href="email"><i class="uil uil-envelope"></i></a>
         </nav>
     </header>    
     <!-- headline section -->
-    <section>
+    <section id="headline">
         <div class="headline">
             <div class="intro">
                 <h1>
@@ -73,7 +74,7 @@
         </div>
     </section>
     <!-- Works section -->
-    <section>
+    <section id="portfolio">
         <div class="works">
             <div class="title">
                 <h2 class="recentWorks">
@@ -222,7 +223,7 @@
         </div>
     </section>
     <!-- About Me section -->
-    <section>
+    <section id="about-me">
         <div class="aboutMe">
             <h2 class="aboutMeTitle">
                 About me
@@ -269,7 +270,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact-me">
         <div class="contact">
             <div class="contactIntro">
                 <p>
@@ -318,5 +319,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
