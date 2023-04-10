@@ -161,7 +161,7 @@ h1 {
 @media (min-width: 768px) {
   .headline {
     display: grid;
-    grid-template-columns: 4rem min(35rem, calc(70% - 10.125rem));
+    grid-template-columns: 4rem 35rem;
   }
 
   .socialmedia {
@@ -559,12 +559,12 @@ h1 {
 
 @media (min-width: 768px) {
   .aboutMe {
-    padding-left: min(8.75rem, calc(100% - 45rem));
-    padding-right: min(8.75rem, calc(100% - 45rem));
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .aboutMeDescription {
-    width: min(45rem, calc(100% - 23rem));
+    width: 45rem;
     font-size: 1.25rem;
   }
 
