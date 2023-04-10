@@ -56,10 +56,10 @@ header .logo {
   font-size: 1.25rem;
   font-weight: 700;
   padding-left: 3rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.navbar a:hover {  
+.navbar a:hover {
   color: #ff6b00;
 }
 
