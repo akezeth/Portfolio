@@ -46,7 +46,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="[live-demo]"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 https://akezeth.github.io/Portfolio/
 
