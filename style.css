@@ -54,6 +54,7 @@ header .logo {
 .navbar a {
   color: #fff;
   font-size: 1.25rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   padding-left: 3rem;
   transition: 0.3s;
@@ -84,6 +85,10 @@ header .logo {
     display: block;
   }
 
+  .logo.active {
+    visibility: hidden;
+  }
+
   .navbar a {
     display: block;
     padding: 2rem;
@@ -101,7 +106,7 @@ header .logo {
   width: 100%;
   display: grid;
   grid-template-columns: calc(90% - 2rem);
-  padding: 6.25rem 1.5rem;
+  padding: 6.25rem 1rem;
   position: relative;
 }
 
