@@ -54,7 +54,7 @@ header .logo {
 .navbar a {
   color: #fff;
   font-size: 1.25rem;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   padding-left: 3rem;
   transition: 0.3s;
