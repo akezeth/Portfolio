@@ -196,8 +196,8 @@ h1 {
   }
 }
 
-/* contianer for all works */
-.works {
+/* contianer for work */
+.work {
   background-color: #fff;
   display: grid;
   grid-template-columns: 100%;
@@ -242,9 +242,10 @@ h1 {
 }
 
 /* container for work1 */
-.work1 {
+#work1 {
   display: grid;
   grid-template-columns: 20rem;
+  height: 35.5rem;
   justify-items: center;
 }
 
@@ -283,7 +284,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.work1Button {
+.work1Languages li {
   background-color: #fff;
   border: 2px solid #8993a4;
   color: #091e42;
@@ -326,10 +327,11 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .work1 {
+  #work1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 0.5rem;
+    height: 28rem;
+    gap: 1rem;
   }
 
   .work1Image {
@@ -342,7 +344,7 @@ h1 {
 }
 
 /* container for otherWorks (works which has the same template) */
-.otherWorks {
+#otherWorks {
   display: grid;
   grid-template-columns: 100%;
   justify-items: center;
@@ -351,8 +353,9 @@ h1 {
 }
 
 /* container for work2 */
-.work2 {
+.works {
   width: 20.5rem;
+  height: 24.15rem;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
@@ -361,13 +364,15 @@ h1 {
     url(images/work2BackgroundDesk.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.work2Info {
+.workssInfo {
   width: 20.3rem;
+
 }
 
-.work2Title {
+.worksTitle {
   width: 18.45rem;
   height: 5.05rem;
   color: #fff;
@@ -380,7 +385,7 @@ h1 {
   padding-left: 0.75rem;
 }
 
-.work2Description {
+.worksDescription {
   width: 18.75rem;
   height: 6.25rem;
   color: #fff;
@@ -393,7 +398,7 @@ h1 {
   padding-left: 0.75rem;
 }
 
-.work2Languages {
+.worksLanguages {
   display: flex;
   padding-top: 6rem;
   padding-bottom: 1.125rem;
@@ -401,7 +406,7 @@ h1 {
   margin-bottom: 0.57rem;
 }
 
-.work2Button {
+.worksLanguages li {
   background-color: rgba(255, 255, 255, 0.24);
   border: none;
   color: #fff;
@@ -415,7 +420,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.work2Link {
+.worksLink {
   width: 100%;
   background-color: #091e42;
   border: none;
@@ -427,60 +432,63 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1.5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.work2Link:focus {
+.worksLink:focus {
   background-color: #051736;
 }
 
-.work2Link:hover {
+.worksLink:hover {
   background-color: #fff;
   border: 2px solid #091e42;
   color: #091e42;
   transition: 0.5s;
 }
 
-.work2Link:disabled {
+.worksLink:disabled {
   background-color: #f4f1f0;
   border: none;
   color: #5b5957;
 }
 
 @media (min-width: 768px) {
-  .otherWorks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: space-evenly;
+  #otherWorks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-content: center;
   }
 
-  .work2 {
+  .works {
     width: 23.2rem;
+    height: 24.15rem;
   }
 
   .projectLink {
     visibility: hidden;
   }
 
-  .work2Info {
+  .worksInfo {
     width: 23rem;
   }
 
-  .work2Description {
+  .worksDescription {
     width: 22.75rem;
     height: 6.25rem;
   }
 
-  .work2:hover {
+  .works:hover {
     background-image: url(images/work2BackgroundDesk.png);
     cursor: pointer;
   }
 
-  .work2:hover .work2Info {
+  .works:hover .worksInfo {
     visibility: hidden;
   }
 
-  .work2:hover .projectLink {
+  .works:hover .projectLink {
     visibility: initial;
   }
 }
