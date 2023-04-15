@@ -176,7 +176,7 @@ const createOtherProject = (otherProject) => {
   return otherProjectEl;
 };
 
-const popupTopProject = (projectPopup) => {
+const popupTopProject = (project1) => {
   const popupTopProjectEl = createElement('div', 'projectPopup');
 
   const popupHeader = createElement('div', 'popupHeader');
@@ -289,7 +289,7 @@ const topProjectBtn = document.getElementById('p-1');
 
 topProjectBtn.addEventListener('click', () => {
   popuptopContainer.appendChild(popupTopProject('projectPopup'));
-  
+
   popuptopContainer.style.display = 'block';
   document.querySelector('.header').style.filter = 'blur(10px)';
   projectContainer.style.filter = 'blur(10px)';
@@ -298,11 +298,11 @@ topProjectBtn.addEventListener('click', () => {
 
   const closeBtn = document.getElementById('closeBtn');
   closeBtn.onclick = () => {
-  popuptopContainer.style.display = 'none';
-  document.querySelector('.header').style.filter = 'blur(0)';
-  projectContainer.style.filter = 'blur(0)';
-  document.getElementById('headline').style.filter = 'blur(0)';
-  document.getElementById('about-me').style.filter = 'blur(0)';
+    popuptopContainer.style.display = 'none';
+    document.querySelector('.header').style.filter = 'blur(0)';
+    projectContainer.style.filter = 'blur(0)';
+    document.getElementById('headline').style.filter = 'blur(0)';
+    document.getElementById('about-me').style.filter = 'blur(0)';
   };
 });
 
@@ -312,7 +312,7 @@ portfolio.appendChild(popupotherContainer);
 const otherProjectBtn = document.querySelectorAll('.popupBtn');
 otherProjectBtn.forEach((btn) => {
   btn.addEventListener('click', () => {
-    const otherproject = otherProjects.find((otherproject) => otherproject.id == btn.id);
+    const otherproject = otherProjects.find((otherproject) => otherproject.id === +btn.id);
     popupotherContainer.appendChild(popupOtherProject(otherproject));
     popupotherContainer.style.display = 'block';
     document.querySelector('.header').style.filter = 'blur(10px)';
@@ -322,13 +322,11 @@ otherProjectBtn.forEach((btn) => {
 
     const closeBtn = document.getElementById('closeBtn');
     closeBtn.onclick = () => {
-    popupotherContainer.style.display = 'none';
-    document.querySelector('.header').style.filter = 'blur(0)';
-    projectContainer.style.filter = 'blur(0)';
-    document.getElementById('headline').style.filter = 'blur(0)';
-    document.getElementById('about-me').style.filter = 'blur(0)';
+      popupotherContainer.style.display = 'none';
+      document.querySelector('.header').style.filter = 'blur(0)';
+      projectContainer.style.filter = 'blur(0)';
+      document.getElementById('headline').style.filter = 'blur(0)';
+      document.getElementById('about-me').style.filter = 'blur(0)';
     };
   });
 });
-
-
