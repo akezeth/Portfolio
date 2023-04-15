@@ -82,7 +82,7 @@ const otherProjects = [
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
-  }
+  },
 ];
 
 // fuction to add element given tag name and class name
@@ -122,7 +122,7 @@ const createtopProjectCon = (project1) => {
   const image1 = createElement('img', 'image1');
   image1.src = topProjectObj.image;
   project1Image.appendChild(image1);
-    
+
   const project1Info = createElement('div', 'project1Info');
   topProjectEl.appendChild(project1Info);
 
@@ -137,10 +137,10 @@ const createtopProjectCon = (project1) => {
   const project1Languages = createList(topProjectObj.technologies, 'project1Languages');
   project1Info.appendChild(project1Languages);
 
-  const project1LinkBtn = createButton('popupBtn', topProjectObj.id, 'See Project');  
+  const project1LinkBtn = createButton('popupBtn', topProjectObj.id, 'See Project');
   project1Info.appendChild(project1LinkBtn);
 
-return topProjectEl;
+  return topProjectEl;
 };
 
 const createOtherProject = (otherProject) => {
@@ -159,21 +159,21 @@ const createOtherProject = (otherProject) => {
 
   // const otherProjectLanguages = createList(projectArr.technologies, 'otherProjectLanguages');
   // otherProjectInfo.appendChild(otherProjectLanguages);
-      
+
   const otherProjectLink = createElement('div', 'otherProjectLink');
   otherProjectEl.appendChild(otherProjectLink);
 
-  const otherProjectLinkBtn = createButton('popupBtn', otherProject.id, 'See Project');  
+  const otherProjectLinkBtn = createButton('popupBtn', otherProject.id, 'See Project');
   otherProjectLink.appendChild(otherProjectLinkBtn);
 
-return otherProjectEl;    
+  return otherProjectEl;
 };
 
 const popupTopProject = (projectPopup) => {
-  const popupTopProjectEl = createElement('div', 'projectPopup');
+  const popupTopProjectEl = createElement('div', projectPopup);
 
   const popupHeader = createElement('div', 'popupHeader');
-  popupHeader.innerHTML = `<i class="uil uil-multiply" id="closeBtn"></i>`;
+  popupHeader.innerHTML = '<i class="uil uil-multiply" id="closeBtn"></i>';
   popupTopProjectEl.appendChild(popupHeader);
 
   const popupTitle = createElement('h3', 'popupTitle');
@@ -182,7 +182,7 @@ const popupTopProject = (projectPopup) => {
 
   const popupLanguages = createList(topProjectObj.technologies, 'popupLanguages');
   popupHeader.appendChild(popupLanguages);
-    
+
   const popupBody = createElement('div', 'popupBody');
   popupTopProjectEl.appendChild(popupBody);
 
@@ -202,33 +202,33 @@ const popupTopProject = (projectPopup) => {
 
   const popupLinkContainer = createElement('div', 'popupLinkContainer');
   popupTextContainer.appendChild(popupLinkContainer);
-        
+
   const liveLink = createElement('a', 'liveLink');
-  liveLink.innerHTML = `See live&nbsp;&nbsp;<i class="uil uil-export"></i>`;
+  liveLink.innerHTML = 'See live&nbsp;&nbsp;<i class="uil uil-export"></i>';
   liveLink.href = topProjectObj.liveLink;
   popupLinkContainer.appendChild(liveLink);
 
   const sourceLink = createElement('a', 'sourceLink');
-  sourceLink.innerHTML = `See source&nbsp;&nbsp;<i class="uil uil-github"></i>`;
+  sourceLink.innerHTML = 'See source&nbsp;&nbsp;<i class="uil uil-github"></i>';
   sourceLink.href = topProjectObj.sourceLink;
   popupLinkContainer.appendChild(sourceLink);
-  
-return popupTopProjectEl;
+
+  return popupTopProjectEl;
 };
 
 const topProjectCon = createElement('div', 'topProjectCon');
-projectContainer.appendChild(topProjectCon); 
+projectContainer.appendChild(topProjectCon);
 topProjectCon.appendChild(createtopProjectCon('project1'));
 
 const otherProjectsCon = createElement('div', 'otherProjectsCon');
 projectContainer.appendChild(otherProjectsCon);
 otherProjects.forEach((otherProject) => {
-  otherProjectsCon.appendChild(createOtherProject('otherProject'));
+  otherProjectsCon.appendChild(createOtherProject(otherProject));
 });
 
 const portfolio = document.getElementById('portfolio');
 const popupContainer = createElement('div', 'popupContainer');
-portfolio.appendChild(popupContainer); 
+portfolio.appendChild(popupContainer);
 popupContainer.appendChild(popupTopProject('projectPopup'));
 
 const topProjectBtn = document.getElementById('p-1');
