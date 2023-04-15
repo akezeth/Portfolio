@@ -109,24 +109,6 @@
   cursor: pointer;
 }
 
-/* link button styles */
-.project1Info button:focus {
-  background-color: #051736;
-}
-
-.project1Info button:hover {
-  background-color: #fff;
-  border: 2px solid #091e42;
-  color: #091e42;
-  transition: 0.2s;
-}
-
-.project1Info button:disabled {
-  background-color: #f4f1f0;
-  border: none;
-  color: #5b5957;
-}
-
 @media (min-width: 768px) {
   .project1 {
     display: grid;
@@ -235,10 +217,12 @@
   bottom: 0;
 }
 
+.project1Info button:focus,
 .otherProjectLink button:focus {
   background-color: #051736;
 }
 
+.project1Info button:hover,
 .otherProjectLink button:hover {
   background-color: #fff;
   border: 2px solid #091e42;
@@ -246,6 +230,7 @@
   transition: 0.2s;
 }
 
+.project1Info button:disabled,
 .otherProjectLink button:disabled {
   background-color: #f4f1f0;
   border: none;
