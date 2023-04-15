@@ -137,54 +137,72 @@
 /* container for work2 */
 .otherProject {
   width: 20.5rem;
-  height: 24.15rem;
+  height: 26.15rem;
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+  position: relative;
+}
+
+#card-1,
+#card-4 {
   background-image:
     linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-    url(../images/work2BackgroundDesk.png);
+    url(../images/2-image-backgnd.png);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+}
+
+#card-2,
+#card-5 {
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../images/3-image-backgnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-3,
+#card-6 {
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../images/4-image-backgnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .otherProjectInfo {
   width: 20.3rem;
+  padding-left: 0.5rem;
 }
 
 .otherProjectTitle {
-  width: 18.45rem;
-  height: 5.05rem;
+  width: 95%;
   color: #fff;
   font-family: 'Crete Round', Georgia, Times, 'Times New Roman', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.75rem;
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
   padding-left: 0.75rem;
 }
 
 .otherProjectDescription {
-  width: 18.75rem;
-  height: 6.25rem;
+  width: 90%;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-top: 5.15rem;
   padding-left: 0.75rem;
+  padding-bottom: 1rem;
 }
 
 .otherProjectLanguages {
   display: flex;
-  padding-top: 6rem;
-  padding-bottom: 1.125rem;
-  padding-left: 1rem;
-  margin-bottom: 0.57rem;
+  padding-left: 0.75rem;
 }
 
 .otherProjectLanguages li {
@@ -259,12 +277,24 @@
   }
 
   .otherProjectDescription {
-    width: 22.75rem;
-    height: 6.25rem;
+    width: 90%;
   }
 
-  .otherProject:hover {
-    background-image: url(../images/work2BackgroundDesk.png);
+  #card-1:hover,
+  #card-4:hover {
+    background-image: url(../images/2-image-backgnd.png);
+    cursor: pointer;
+  }
+
+  #card-2:hover,
+  #card-5:hover {
+    background-image: url(../images/3-image-backgnd.png);
+    cursor: pointer;
+  }
+
+  #card-3:hover,
+  #card-6:hover {
+    background-image: url(../images/4-image-backgnd.png);
     cursor: pointer;
   }
 

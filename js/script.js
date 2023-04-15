@@ -30,7 +30,8 @@ const topProjectObj = {
 // ========== Create Project Array for other project ===============
 const otherProjects = [
   {
-    id: 'p-2',
+    id: 1,
+    backgroundImgId: 'card-1',
     title: 'Profesional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/2-image.png',
@@ -39,7 +40,8 @@ const otherProjects = [
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'p-3',
+    id: 2,
+    backgroundImgId: 'card-2',
     title: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/3-image.png',
@@ -48,8 +50,9 @@ const otherProjects = [
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'p-4',
-    title: 'WebSite Portfolio',
+    id: 3,
+    backgroundImgId: 'card-3',
+    title: 'WebSite Portfolio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -57,7 +60,8 @@ const otherProjects = [
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'p-5',
+    id: 4,
+    backgroundImgId: 'card-4',
     title: 'Profesional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/2-image.png',
@@ -66,7 +70,8 @@ const otherProjects = [
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'p-6',
+    id: 5,
+    backgroundImgId: 'card-5',
     title: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/3-image.png',
@@ -75,8 +80,9 @@ const otherProjects = [
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
   },
   {
-    id: 'p-7',
-    title: 'WebSite Portfolio',
+    id: 6,
+    backgroundImgId: 'card-6',
+    title: 'WebSite Portfolio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: '../images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -137,7 +143,7 @@ const createtopProjectCon = (project1) => {
   const project1Languages = createList(topProjectObj.technologies, 'project1Languages');
   project1Info.appendChild(project1Languages);
 
-  const project1LinkBtn = createButton('popupBtn', topProjectObj.id, 'See Project');
+  const project1LinkBtn = createButton('toppopupBtn', topProjectObj.id, 'See Project');
   project1Info.appendChild(project1LinkBtn);
 
   return topProjectEl;
@@ -145,6 +151,7 @@ const createtopProjectCon = (project1) => {
 
 const createOtherProject = (otherProject) => {
   const otherProjectEl = createElement('div', 'otherProject');
+  otherProjectEl.id = otherProject.backgroundImgId;
 
   const otherProjectInfo = createElement('div', 'otherProjectInfo');
   otherProjectEl.appendChild(otherProjectInfo);
@@ -157,8 +164,8 @@ const createOtherProject = (otherProject) => {
   otherProjectDescription.innerText = otherProject.description;
   otherProjectInfo.appendChild(otherProjectDescription);
 
-  // const otherProjectLanguages = createList(projectArr.technologies, 'otherProjectLanguages');
-  // otherProjectInfo.appendChild(otherProjectLanguages);
+  const otherProjectLanguages = createList(otherProject.technologies, 'otherProjectLanguages');
+  otherProjectInfo.appendChild(otherProjectLanguages);
 
   const otherProjectLink = createElement('div', 'otherProjectLink');
   otherProjectEl.appendChild(otherProjectLink);
@@ -170,7 +177,7 @@ const createOtherProject = (otherProject) => {
 };
 
 const popupTopProject = (projectPopup) => {
-  const popupTopProjectEl = createElement('div', projectPopup);
+  const popupTopProjectEl = createElement('div', 'projectPopup');
 
   const popupHeader = createElement('div', 'popupHeader');
   popupHeader.innerHTML = '<i class="uil uil-multiply" id="closeBtn"></i>';
@@ -216,6 +223,53 @@ const popupTopProject = (projectPopup) => {
   return popupTopProjectEl;
 };
 
+const popupOtherProject = (otherProject) => {
+  const popupOthersProjectEl = createElement('div', 'projectPopup');
+
+  const popupHeader = createElement('div', 'popupHeader');
+  popupHeader.innerHTML = '<i class="uil uil-multiply" id="closeBtn"></i>';
+  popupOthersProjectEl.appendChild(popupHeader);
+
+  const popupTitle = createElement('h3', 'popupTitle');
+  popupTitle.innerHTML = otherProject.title;
+  popupHeader.appendChild(popupTitle);
+
+  const popupLanguages = createList(otherProject.technologies, 'popupLanguages');
+  popupHeader.appendChild(popupLanguages);
+
+  const popupBody = createElement('div', 'popupBody');
+  popupOthersProjectEl.appendChild(popupBody);
+
+  const popupImgContainer = createElement('div', 'popupImgContainer');
+  popupBody.appendChild(popupImgContainer);
+
+  const popupImg = createElement('img', 'popupImg');
+  popupImg.src = otherProject.image;
+  popupImgContainer.appendChild(popupImg);
+
+  const popupTextContainer = createElement('div', 'popupTextContainer');
+  popupBody.appendChild(popupTextContainer);
+
+  const popupDescription = createElement('p', 'popupDescription');
+  popupDescription.innerText = otherProject.description;
+  popupTextContainer.appendChild(popupDescription);
+
+  const popupLinkContainer = createElement('div', 'popupLinkContainer');
+  popupTextContainer.appendChild(popupLinkContainer);
+
+  const liveLink = createElement('a', 'liveLink');
+  liveLink.innerHTML = 'See live&nbsp;&nbsp;<i class="uil uil-export"></i>';
+  liveLink.href = otherProject.liveLink;
+  popupLinkContainer.appendChild(liveLink);
+
+  const sourceLink = createElement('a', 'sourceLink');
+  sourceLink.innerHTML = 'See source&nbsp;&nbsp;<i class="uil uil-github"></i>';
+  sourceLink.href = otherProject.sourceLink;
+  popupLinkContainer.appendChild(sourceLink);
+
+  return popupOthersProjectEl;
+};
+
 const topProjectCon = createElement('div', 'topProjectCon');
 projectContainer.appendChild(topProjectCon);
 topProjectCon.appendChild(createtopProjectCon('project1'));
@@ -227,24 +281,54 @@ otherProjects.forEach((otherProject) => {
 });
 
 const portfolio = document.getElementById('portfolio');
-const popupContainer = createElement('div', 'popupContainer');
-portfolio.appendChild(popupContainer);
-popupContainer.appendChild(popupTopProject('projectPopup'));
+const popuptopContainer = createElement('div', 'popuptopContainer');
+portfolio.appendChild(popuptopContainer);
 
+// popup window for the top project
 const topProjectBtn = document.getElementById('p-1');
+
 topProjectBtn.addEventListener('click', () => {
-  popupContainer.style.display = 'block';
+  popuptopContainer.appendChild(popupTopProject('projectPopup'));
+  
+  popuptopContainer.style.display = 'block';
   document.querySelector('.header').style.filter = 'blur(10px)';
   projectContainer.style.filter = 'blur(10px)';
   document.getElementById('headline').style.filter = 'blur(10px)';
   document.getElementById('about-me').style.filter = 'blur(10px)';
-});
 
-const closeBtn = document.getElementById('closeBtn');
-closeBtn.onclick = () => {
-  popupContainer.style.display = 'none';
+  const closeBtn = document.getElementById('closeBtn');
+  closeBtn.onclick = () => {
+  popuptopContainer.style.display = 'none';
   document.querySelector('.header').style.filter = 'blur(0)';
   projectContainer.style.filter = 'blur(0)';
   document.getElementById('headline').style.filter = 'blur(0)';
   document.getElementById('about-me').style.filter = 'blur(0)';
-};
+  };
+});
+
+// popup window for other projects
+const popupotherContainer = createElement('div', 'popupotherContainer');
+portfolio.appendChild(popupotherContainer);
+const otherProjectBtn = document.querySelectorAll('.popupBtn');
+otherProjectBtn.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const otherproject = otherProjects.find((otherproject) => otherproject.id == btn.id);
+    popupotherContainer.appendChild(popupOtherProject(otherproject));
+    popupotherContainer.style.display = 'block';
+    document.querySelector('.header').style.filter = 'blur(10px)';
+    projectContainer.style.filter = 'blur(10px)';
+    document.getElementById('headline').style.filter = 'blur(10px)';
+    document.getElementById('about-me').style.filter = 'blur(10px)';
+
+    const closeBtn = document.getElementById('closeBtn');
+    closeBtn.onclick = () => {
+    popupotherContainer.style.display = 'none';
+    document.querySelector('.header').style.filter = 'blur(0)';
+    projectContainer.style.filter = 'blur(0)';
+    document.getElementById('headline').style.filter = 'blur(0)';
+    document.getElementById('about-me').style.filter = 'blur(0)';
+    };
+  });
+});
+
+
