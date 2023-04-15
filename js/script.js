@@ -176,7 +176,7 @@ const createOtherProject = (otherProject) => {
   return otherProjectEl;
 };
 
-const popupTopProject = (project1) => {
+const popupTopProject = (projectPopup) => {
   const popupTopProjectEl = createElement('div', 'projectPopup');
 
   const popupHeader = createElement('div', 'popupHeader');
@@ -288,7 +288,7 @@ portfolio.appendChild(popuptopContainer);
 const topProjectBtn = document.getElementById('p-1');
 
 topProjectBtn.addEventListener('click', () => {
-  popuptopContainer.appendChild(popupTopProject('projectPopup'));
+  popuptopContainer.appendChild(popupTopProject(projectPopup));
 
   popuptopContainer.style.display = 'block';
   document.querySelector('.header').style.filter = 'blur(10px)';
