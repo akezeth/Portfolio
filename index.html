@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link 
-        rel="stylesheet" 
-        href="https://fonts.googleapis.com/css?family=Poppins|Inter|Crete+Round|Roboto"
+			rel="stylesheet" 
+			href="https://fonts.googleapis.com/css?family=Poppins|Inter|Crete+Round|Roboto"
     />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projectStyle.css">
+    <link rel="stylesheet" href="css/popupStyle.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
         <i class="uil uil-bars" id="menuIcon"></i>
 
         <nav class="navbar">
-            <!-- <a href="#headline">Hello</a> -->
+            <a href="#headline">Hello</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#about-me">About</a>
             <a href="#contact-me">Contact</a>
@@ -66,29 +68,32 @@
                         <a href="https://twitter.com/akezeth"><img src="images/twitter-icon.png" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/medium-icon.png" alt="Mediujm"></a>
+                        <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
                     </li>
                 </ul>
             </div>
-            <div id="background-img" class="background-img"></div>
+            <div class="mobile-background-img">
+                <img src="images/headline-background.png" alt="background image">
+            </div>
+            <div class="desktop-background-img">
+                <img src="images/headline-desktop-background.png" alt="background image">
+            </div>
         </div>
     </section>
     <!-- Work section -->
     <section id="portfolio">
-        <div class="work">
+        <div id="projectContainer">
             <div class="title">
-                <h2 class="recentWorks">
+                <h2 class="recentprojects">
                     My Recent Works
                 </h2>
                 <hr>
             </div>
-            <div id="work1">
 
-            </div>
-            <div id="otherWorks">
-
-            </div>
         </div>
+        <!-- <div id="popupContainer">
+
+        </div> -->
     </section>
     <!-- About Me section -->
     <section id="about-me">
@@ -187,6 +192,6 @@
             </ul>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
