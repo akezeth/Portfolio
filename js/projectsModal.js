@@ -232,3 +232,78 @@ projectContainer.appendChild(otherProjectsCon);
 otherProjects.forEach((otherProject) => {
   otherProjectsCon.appendChild(createOtherProject(otherProject));
 });
+
+// Function statement to add popup window
+function projectModal(e) {
+  const docFragment = document.createDocumentFragment();
+  const projectCardInfo = modalProjects[parseInt(e.target.dataset.projectbtn, 10)];
+
+  const popupContainer = createElement('div', 'popupContainer');
+
+  const projectPopup = document.createElement('div');
+  projectPopup.classList.add('projectPopup', 'project-card');
+
+  const popupHeader = createElement('div', 'popupHeader');
+  popupHeader.innerHTML = '<i class="uil uil-multiply" id="closeBtn"></i>';
+  docFragment.appendChild(popupHeader);
+
+  const popupTitle = createElement('h3', 'popupTitle');
+  popupTitle.innerHTML = projectCardInfo.title;
+  popupHeader.appendChild(popupTitle);
+
+  const popupLanguages = createList(projectCardInfo.technologies, 'popupLanguages');
+  popupHeader.appendChild(popupLanguages);
+
+  const popupBody = createElement('div', 'popupBody');
+  docFragment.appendChild(popupBody);
+
+  const popupImgContainer = createElement('div', 'popupImgContainer');
+  popupBody.appendChild(popupImgContainer);
+
+  const popupImg = createElement('img', 'popupImg');
+  popupImg.src = projectCardInfo.image;
+  popupImgContainer.appendChild(popupImg);
+
+  const popupTextContainer = createElement('div', 'popupTextContainer');
+  popupBody.appendChild(popupTextContainer);
+
+  const popupDescription = createElement('p', 'popupDescription');
+  popupDescription.innerText = projectCardInfo.description;
+  popupTextContainer.appendChild(popupDescription);
+
+  const popupLinkContainer = createElement('div', 'popupLinkContainer');
+  popupTextContainer.appendChild(popupLinkContainer);
+
+  const liveLink = createElement('a', 'liveLink');
+  liveLink.innerHTML = 'See live&nbsp;&nbsp;<i class="uil uil-export"></i>';
+  liveLink.href = projectCardInfo.liveLink;
+  popupLinkContainer.appendChild(liveLink);
+
+  const sourceLink = createElement('a', 'sourceLink');
+  sourceLink.innerHTML = 'See source&nbsp;&nbsp;<i class="uil uil-github"></i>';
+  sourceLink.href = projectCardInfo.sourceLink;
+  popupLinkContainer.appendChild(sourceLink);
+
+  projectPopup.appendChild(docFragment);
+  popupContainer.appendChild(projectPopup);
+  bodyTag.appendChild(popupContainer);
+
+  document.querySelector('.header').style.filter = 'blur(10px)';
+  projectContainer.style.filter = 'blur(10px)';
+  document.getElementById('headline').style.filter = 'blur(10px)';
+  document.getElementById('about-me').style.filter = 'blur(10px)';
+
+  const closeBtn = document.getElementById('closeBtn');
+  closeBtn.addEventListener('click', () => {
+    bodyTag.removeChild(popupContainer);
+    document.querySelector('.header').style.filter = 'blur(0)';
+    projectContainer.style.filter = 'blur(0)';
+    document.getElementById('headline').style.filter = 'blur(0)';
+    document.getElementById('about-me').style.filter = 'blur(0)';
+  });
+}
+
+const projectsBtn = document.querySelectorAll('.project-btn');
+console.log(projectsBtn);
+
+projectsBtn.forEach((btn) => btn.addEventListener('click', projectModal));
