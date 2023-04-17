@@ -143,7 +143,7 @@ const createElement = (tag, className) => {
   return el;
 };
 
-// function to create ul and li elements given an array of items and the class name of the ul element
+// function to create ul and li elements given an array of items & the class name of the ul element
 const createList = (items, className) => {
   const ul = createElement('ul', className);
   items.forEach((item) => {
@@ -158,7 +158,7 @@ const createList = (items, className) => {
 const createButton = (className, dataset, text) => {
   const btn = createElement('button', className);
   btn.innerText = text;
-  btn.setAttribute('data-projectbtn',dataset);
+  btn.setAttribute('data-projectbtn', dataset);
   return btn;
 };
 
@@ -187,7 +187,7 @@ const createtopProjectCon = () => {
   const project1Languages = createList(topProjectObj.technologies, 'project1Languages');
   project1Info.appendChild(project1Languages);
 
-  const project1LinkBtn = createButton('project-btn',topProjectObj.dataset, 'See Project');
+  const project1LinkBtn = createButton('project-btn', topProjectObj.dataset, 'See Project');
   project1Info.appendChild(project1LinkBtn);
 
   return topProjectEl;
@@ -304,6 +304,4 @@ function projectModal(e) {
 }
 
 const projectsBtn = document.querySelectorAll('.project-btn');
-console.log(projectsBtn);
-
 projectsBtn.forEach((btn) => btn.addEventListener('click', projectModal));
