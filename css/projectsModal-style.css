@@ -82,7 +82,7 @@
 }
 
 .popupLinkContainer a {
-  background-color: #091e42;
+  background-color: #f55800;
   border: none;
   color: #fff;
   padding: 0.75rem 1rem;
@@ -90,17 +90,16 @@
   font-weight: 700;
   font-size: 1.5rem;
   cursor: pointer;
-  border-radius: 1rem;
 }
 
 .popupLinkContainer a:focus {
-  background-color: #051736;
+  background-color: #e05304;
 }
 
 .popupLinkContainer a:hover {
   background-color: #fff;
-  border: 2px solid #091e42;
-  color: #091e42;
+  border: 1px solid #f55800;
+  color: #f55800;
   transition: 0.2s;
 }
 
@@ -117,6 +116,12 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  transition: 0.1s;
+}
+
+#closeBtn:hover {
+  scale: 1.3;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -160,7 +165,7 @@
   }
 
   .popupLinkContainer a {
-    background-color: #091e42;
+    background-color: #f55800;;
     border: none;
     color: #fff;
     padding: 0.75rem 1rem;

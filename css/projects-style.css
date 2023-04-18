@@ -99,7 +99,7 @@
 }
 
 .project1Info button {
-  background-color: #091e42;
+  background-color: #f55800;
   border: none;
   color: #fff;
   padding: 0.75rem;
@@ -221,7 +221,7 @@
 
 .otherProjectLink button {
   width: 100%;
-  background-color: #091e42;
+  background-color: #f55800;
   border: none;
   color: #fff;
   padding: 0.75rem;
@@ -237,14 +237,14 @@
 
 .project1Info button:focus,
 .otherProjectLink button:focus {
-  background-color: #051736;
+  background-color: #e05304;
 }
 
 .project1Info button:hover,
 .otherProjectLink button:hover {
   background-color: #fff;
-  border: 2px solid #091e42;
-  color: #091e42;
+  border: 1px solid #f55800;
+  color: #f55800;
   transition: 0.2s;
 }
 
