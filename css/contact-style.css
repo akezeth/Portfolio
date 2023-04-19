@@ -1,0 +1,130 @@
+/* contact section */
+.contact {
+  background-color: #fff;
+  display: grid;
+  padding: 4.3rem 0 9.6rem;
+  grid-template-columns: 20.5rem;
+  justify-content: center;
+}
+
+.contactIntro {
+  color: #172b4d;
+  font-family: 'Inter', 'Gill Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  text-align: center;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.input-control {
+  margin-bottom: 0.5rem;
+}
+
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 0.75rem;
+  height: 0.75rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  background-color: #fbf8f7;
+  border: none;
+  height: 7.15rem;
+  padding: 0.75rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button[type=submit] {
+  width: 8.2rem;
+  height: 3rem;
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type=submit]:focus {
+  background-color: #e05304;
+}
+
+button[type=submit]:hover {
+  background-color: #fff;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
+  transition: 0.5s;
+}
+
+button[type=submit]:disabled {
+  background-color: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+/* @media (max-width: 768px) {
+  .contactForm .sname {
+    display: none;
+  }
+} */
+
+@media (min-width: 768px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 8.1rem;
+    gap: 1.5rem;
+  }
+
+  .contactIntro {
+    padding-left: 8.1rem;
+    text-align: left;
+  }
+
+  .contactForm {
+    padding-left: 2.1rem;
+    padding-right: 8.1rem;
+  }
+
+  .contactForm .fullnameInput {
+    display: none;
+  }
+
+  .contactForm .sname {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .submitContainer {
+    justify-content: left;
+  }
+}
