@@ -15,6 +15,7 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/contact-style.css">
     <link rel="stylesheet" href="css/projects-style.css">
     <link rel="stylesheet" href="css/projectsModal-style.css">
     <title>Portfolio</title>
@@ -148,26 +149,28 @@
                 </p>
             </div>
             <div class="contactForm">
-                <form action="https://formspree.io/f/xoqzkakk" method="post">
+                <form action="https://formspree.io/f/xoqzkakk" method="post" id="form">
                     <div class="sname">
-                        <div class="firstnameInput">
+                        <div class="firstnameInput input-control">
                             <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30" required>
                         </div>
-                        <div class="lastnameInput">
+                        <div class="lastnameInput input-control">
                             <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30" required>
                         </div>
                     </div>
-                    <div class="fullnameInput">
+                    <!-- <div class="fullnameInput input-control">
                         <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="30" required>
-                    </div>
-                    <div class="emailInput">
+                        <div class="errorMessage"></div>
+                    </div> -->
+                    <div class="emailInput input-control">
                         <input type="email" id="email" name="_replyto" placeholder="Enter email" required>
+                        <p class="errorMessage"></p>
                     </div>
-                    <div class="messageInput">
+                    <div class="messageInput input-control">
                         <textarea name="Opinion" id="Opinion" maxlength="500" required>Write me something...</textarea>
                     </div>
                     <div class="submitContainer">
-                        <button type="submit" id="submit" name="submit" value="submit">Get In Touch</button>
+                        <button type="submit" id="submit" name="submit">Get In Touch</button>
                     </div>
                 </form>
             </div>    
@@ -190,5 +193,6 @@
     </footer>
     <script src="js/mobileMenu.js"></script>
     <script src="js/projectsModal.js"></script>
+    <script src="js/formValidation.js"></script>
 </body>
 </html>
