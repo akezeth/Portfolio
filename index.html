@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link 
-        rel="stylesheet" 
-        href="https://fonts.googleapis.com/css?family=Poppins|Inter|Crete+Round|Roboto"
+			rel="stylesheet" 
+			href="https://fonts.googleapis.com/css?family=Poppins|Inter|Crete+Round|Roboto"
     />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/projects-style.css">
+    <link rel="stylesheet" href="css/projectsModal-style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
         <i class="uil uil-bars" id="menuIcon"></i>
 
         <nav class="navbar">
-            <!-- <a href="#headline">Hello</a> -->
+            <a href="#headline">Hello</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#about-me">About</a>
             <a href="#contact-me">Contact</a>
@@ -66,159 +68,26 @@
                         <a href="https://twitter.com/akezeth"><img src="images/twitter-icon.png" alt="Twitter"></a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/medium-icon.png" alt="Mediujm"></a>
+                        <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
                     </li>
                 </ul>
             </div>
-            <div id="background-img" class="background-img"></div>
+            <div class="mobile-background-img">
+                <img src="images/headline-background.png" alt="background image">
+            </div>
+            <div class="desktop-background-img">
+                <img src="images/headline-desktop-background.png" alt="background image">
+            </div>
         </div>
     </section>
-    <!-- Works section -->
+    <!-- Work section -->
     <section id="portfolio">
-        <div class="works">
+        <div id="projectContainer">
             <div class="title">
-                <h2 class="recentWorks">
+                <h2 class="recentprojects">
                     My Recent Works
                 </h2>
                 <hr>
-            </div>
-            <div class="work1">
-                <div class="work1Image">
-                    <img src="images/Img Placeholder.png" alt="image">
-                </div>
-                <div class="work1Info">
-                    <h3 class="work1Title">
-                        Multi-Post Stories
-                    </h3>
-                    <p class="work1Description">
-                        A daily selection of privately personalized reads; no accounts or 
-                        sign-ups required. has been the industry's standard dummy text ever 
-                        since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                    <ul class="work1Languages">
-                        <li class="work1Button">CSS</li>
-                        <li class="work1Button">HTML</li>
-                        <li class="work1Button">Bootstrap</li>
-                        <li class="work1Button">Ruby</li>
-                    </ul>
-                    <a class="work1Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                </div>
-            </div>
-            <div class="otherWorks">
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
-                <div class="work2">
-                    <div class="work2Info">
-                        <h3 class="work2Title">
-                            Profesional Art Printing Data
-                        </h3>
-                        <p class="work2Description">
-                            A daily selection of privately personalized reads; no accounts or 
-                            sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="work2Languages">
-                            <li class="work2Button">CSS</li>
-                            <li class="work2Button">HTML</li>
-                            <li class="work2Button">Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="projectLink">
-                        <a class="work2Link" href="https://github.com/akezeth/Portfolio-setup-and-mobile-first">See project</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -319,6 +188,7 @@
             </ul>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/mobileMenu.js"></script>
+    <script src="js/projectsModal.js"></script>
 </body>
 </html>

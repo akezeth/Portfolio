@@ -1,0 +1,308 @@
+#projectContainer {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  width: 100%;
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
+}
+
+/* container for 'Recent projects' title */
+.title {
+  display: grid;
+  padding: 5rem 0;
+  grid-template-columns: 20rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Heading for Recent projects */
+.recentprojects {
+  color: #1c1a19;
+  font-family: 'Crete Round', Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 22rem calc(100% - 22rem);
+    align-items: center;
+  }
+
+  .recentprojects {
+    padding-bottom: 0;
+    padding-right: 1rem;
+  }
+}
+
+/* container for project1 */
+.project1 {
+  display: grid;
+  grid-template-columns: 20rem;
+  justify-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.project1Image img {
+  max-width: 100%;
+}
+
+/* Heading for project1 title */
+.project1Title {
+  width: 100%;
+  color: #091e42;
+  font-family: 'Crete Round', Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  align-items: center;
+  padding-top: 0.75rem;
+}
+
+.project1Description {
+  width: 100%;
+  color: #091e42;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: justify;
+}
+
+.project1Languages {
+  display: flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project1Languages li {
+  background-color: #fff;
+  border: 2px solid #8993a4;
+  color: #091e42;
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+}
+
+.project1Info button {
+  background-color: #f55800;
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .project1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .project1Image {
+    align-self: center;
+  }
+
+  .project1Info {
+    padding: 0.5rem;
+  }
+}
+
+/* container for otherprojects (projects which has the same template) */
+.otherProjectsCon {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  width: 100%;
+  margin-bottom: 8.15rem;
+}
+
+/* container for work2 */
+.otherProject {
+  width: 20.5rem;
+  height: 26.15rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+#card-1,
+#card-4 {
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../images/2-image-backgnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-2,
+#card-5 {
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../images/3-image-backgnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card-3,
+#card-6 {
+  background-image:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
+    url(../images/4-image-backgnd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.otherProjectInfo {
+  width: 20.3rem;
+  padding-left: 0.5rem;
+}
+
+.otherProjectTitle {
+  width: 95%;
+  color: #fff;
+  font-family: 'Crete Round', Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  padding-top: 3.5rem;
+  padding-left: 0.75rem;
+}
+
+.otherProjectDescription {
+  width: 90%;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.otherProjectLanguages {
+  display: flex;
+  padding-left: 0.75rem;
+}
+
+.otherProjectLanguages li {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.otherProjectLink button {
+  width: 100%;
+  background-color: #f55800;
+  border: none;
+  color: #fff;
+  padding: 0.75rem;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.project1Info button:focus,
+.otherProjectLink button:focus {
+  background-color: #e05304;
+}
+
+.project1Info button:hover,
+.otherProjectLink button:hover {
+  background-color: #fff;
+  border: 1px solid #f55800;
+  color: #f55800;
+  transition: 0.2s;
+}
+
+.project1Info button:disabled,
+.otherProjectLink button:disabled {
+  background-color: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+@media (min-width: 768px) {
+  .otherProjectsCon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .otherProject {
+    width: 23.2rem;
+    height: 24.15rem;
+  }
+
+  .otherProjectLink button {
+    visibility: hidden;
+  }
+
+  .otherProjectInfo {
+    width: 23rem;
+  }
+
+  .otherProjectDescription {
+    width: 90%;
+  }
+
+  #card-1:hover,
+  #card-4:hover {
+    background-image: url(../images/2-image-backgnd.png);
+    cursor: pointer;
+  }
+
+  #card-2:hover,
+  #card-5:hover {
+    background-image: url(../images/3-image-backgnd.png);
+    cursor: pointer;
+  }
+
+  #card-3:hover,
+  #card-6:hover {
+    background-image: url(../images/4-image-backgnd.png);
+    cursor: pointer;
+  }
+
+  .otherProject:hover .otherProjectInfo {
+    visibility: hidden;
+  }
+
+  .otherProject:hover .otherProjectLink button {
+    visibility: initial;
+  }
+}

@@ -1,0 +1,178 @@
+.popupContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.projectPopup {
+  background: #fff;
+  width: 95%;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popupHeader {
+  position: relative;
+}
+
+.popupTitle {
+  width: 90%;
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 0.75rem;
+}
+
+.popupLanguages {
+  display: flex;
+  padding-bottom: 0.75rem;
+}
+
+.popupLanguages li {
+  background-color: #fff;
+  border: 2px solid #8993a4;
+  color: #091e42;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right: 0.55rem;
+}
+
+.popupBody {
+  width: 100%;
+}
+
+.popupImgContainer img {
+  width: 100%;
+  height: 16.5rem;
+  object-fit: contain;
+}
+
+.popupTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.popupDescription {
+  width: 100%;
+  color: #091e42;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+}
+
+.popupLinkContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popupLinkContainer a {
+  background-color: #f55800;
+  border: none;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popupLinkContainer a:focus {
+  background-color: #e05304;
+}
+
+.popupLinkContainer a:hover {
+  background-color: #fff;
+  border: 1px solid #f55800;
+  color: #f55800;
+  transition: 0.2s;
+}
+
+.popupLinkContainer a:disabled {
+  background-color: #f4f1f0;
+  border: none;
+  color: #5b5957;
+}
+
+#closeBtn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#closeBtn:hover {
+  scale: 1.3;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .projectPopup {
+    width: 80%;
+
+    /* height: 83%; */
+    padding: 1.5rem;
+  }
+
+  .popupLanguages {
+    padding-bottom: 1rem;
+  }
+
+  .popupBody {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .popupImgContainer img {
+    display: flex;
+    align-items: start;
+    height: 24rem;
+    object-fit: contain;
+    float: left;
+  }
+
+  .popupTextContainer {
+    align-self: start;
+  }
+
+  .popupDescription {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .popupLinkContainer {
+    justify-content: start;
+    gap: 0.75rem;
+  }
+
+  .popupLinkContainer a {
+    background-color: #f55800;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    height: 3.5rem;
+  }
+}
