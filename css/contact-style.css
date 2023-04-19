@@ -21,12 +21,8 @@
   width: 100%;
 }
 
-.input-control.success input {
-  color: #172b4d;
-}
-
-.input-control.error input {
-  color: #ff3860;
+.input-control {
+  margin-bottom: 0.5rem;
 }
 
 .input-control .errorMessage {
@@ -38,7 +34,6 @@
 input[type=text] {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 0.5rem;
   border: none;
   border-bottom: 1px solid #ccc;
 }
@@ -46,7 +41,6 @@ input[type=text] {
 input[type=email] {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 1.5rem;
   border: none;
   border-bottom: 1px solid #ccc;
 }
@@ -96,11 +90,11 @@ button[type=submit]:disabled {
   color: #5b5957;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .contactForm .sname {
     display: none;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .contact {
