@@ -5,7 +5,7 @@ const projectContainer = document.getElementById('projectContainer');
 const topProjectObj = {
   title: 'Multi-Post Stories',
   description: "A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.",
-  image: '../images/1-image.png',
+  image: './images/1-image.png',
   technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
   dataset: 0,
 };
@@ -16,7 +16,7 @@ const otherProjects = [
     backgroundImgId: 'card-1',
     title: 'Profesional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/2-image.png',
+    image: './images/2-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 1,
   },
@@ -24,7 +24,7 @@ const otherProjects = [
     backgroundImgId: 'card-2',
     title: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/3-image.png',
+    image: './images/3-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 2,
   },
@@ -32,7 +32,7 @@ const otherProjects = [
     backgroundImgId: 'card-3',
     title: 'WebSite Portfolio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/4-image.png',
+    image: './images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 3,
   },
@@ -40,7 +40,7 @@ const otherProjects = [
     backgroundImgId: 'card-4',
     title: 'Profesional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/2-image.png',
+    image: './images/2-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 4,
   },
@@ -48,7 +48,7 @@ const otherProjects = [
     backgroundImgId: 'card-5',
     title: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/3-image.png',
+    image: './images/3-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 5,
   },
@@ -56,7 +56,7 @@ const otherProjects = [
     backgroundImgId: 'card-6',
     title: 'WebSite Portfolio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: '../images/4-image.png',
+    image: './images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     dataset: 6,
   },
@@ -69,7 +69,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/1-image.png',
+    image: './images/1-image.png',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -79,7 +79,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/2-image.png',
+    image: './images/2-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -89,7 +89,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/3-image.png',
+    image: './images/3-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -99,7 +99,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/4-image.png',
+    image: './images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -109,7 +109,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/2-image.png',
+    image: './images/2-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -119,7 +119,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/3-image.png',
+    image: './images/3-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -129,7 +129,7 @@ const modalProjects = [
     description: `A daily selection of privately personalized reads; no accounts or  sign-ups required. has been the industry's standard dummy text ever  since the 1500s, when an unknown printer took a standard dummy text.
     
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-    image: '../images/4-image.png',
+    image: './images/4-image.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://akezeth.github.io/Portfolio/',
     sourceLink: 'https://github.com/akezeth/Portfolio-setup-and-mobile-first',
@@ -162,7 +162,7 @@ const createButton = (className, dataset, text) => {
   return btn;
 };
 
-// function expression for add top project
+// function expression to add the top project
 const createtopProjectCon = () => {
   const topProjectEl = createElement('div', 'project1');
 
