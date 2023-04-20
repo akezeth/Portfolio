@@ -152,21 +152,21 @@
                 <form action="https://formspree.io/f/xoqzkakk" method="post" id="form">
                     <div class="sname">
                         <div class="firstnameInput input-control">
-                            <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30" required>
+                            <input type="text" id="firstname" name="firstname" class="form-input" placeholder="First Name" maxlength="30" required>
                         </div>
                         <div class="lastnameInput input-control">
-                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30" required>
+                            <input type="text" id="lastname" name="lastname" class="form-input" placeholder="Last Name" maxlength="30" required>
                         </div>
                     </div>
                     <!-- <div class="fullnameInput input-control">
                         <input type="text" id="fname" name="fname" placeholder="Full Name" maxlength="30" required>
                     </div> -->
                     <div class="emailInput input-control">
-                        <input type="email" id="email" name="_replyto" placeholder="Enter email" required>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter email" required>
                         <p class="errorMessage"></p>
                     </div>
                     <div class="messageInput input-control">
-                        <textarea name="Opinion" id="Opinion" maxlength="500" required placeholder="Write me something..."></textarea>
+                        <textarea name="opinion" id="opinion" class="form-input" maxlength="500" required placeholder="Write me something..."></textarea>
                     </div>
                     <div class="submitContainer">
                         <button type="submit" id="submit" name="submit">Get In Touch</button>
@@ -193,5 +193,6 @@
     <script src="js/mobileMenu.js"></script>
     <script src="js/projectsModal.js"></script>
     <script src="js/formValidation.js"></script>
+    <script src="js/localStorage.js"></script>
 </body>
 </html>
